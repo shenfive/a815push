@@ -51,8 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 
     
-  
-
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler:
+                        @escaping (UIBackgroundFetchResult) -> Void) { print("User Info:\(userInfo)")
+    }
+    
+    
     
     
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
